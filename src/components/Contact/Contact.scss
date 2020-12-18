@@ -1,0 +1,196 @@
+@import '../config';
+
+.contact-container {
+    @include flex(flex-end, center, row);
+    height: 100vh;
+    width: 100vw;
+    background: $superLightBeige;
+
+    .inner {
+        @include flex(center, center, row);
+        height: 93vh;
+        width: 70%;
+
+        .left {
+            @include flex(center, space-between, column);
+            width: 50%;
+            height: 80%;
+
+            .text {
+                @include flex(flex-start, space-between, column);
+                width: 100%;
+
+
+                h1 {
+                    @include main-font(3.5rem, 700, $softBlack);
+                    width: 100%;
+                }
+
+                .bottom-h1 {
+                    margin: -10px 0 15px 0;
+                }
+
+                h3 {
+                    @include minor-font(1.1rem, 700, $softBlack);
+
+                    span {
+                        border-bottom: 2px solid $mainOrange;
+                    }
+                }
+            }
+
+            img {
+                width: 80%;
+                transform: translateX(-50px);
+            }
+
+        }
+
+        .right {
+            @include flex(flex-start, flex-start, row);
+            height: 80%;
+            width: 50%;
+
+            form {
+                @include flex(flex-start, flex-start, column);
+                height: 100%;
+                width: 80%;
+                margin-left: 20%;
+                margin-top: 5%;
+
+
+                .form-input-container {
+                    @include flex(flex-start, flex-start, column);
+                    margin-bottom: 30px;
+                    width: 90%;
+
+                    h2 {
+                        @include minor-font(1rem, 700, $softBlack);
+                        margin-bottom: 5px;
+                        span {
+                            color: $mainOrange;
+                        }
+                    }
+
+                    input {
+                        @include minor-font(1rem, 400, gray);
+                        padding: 5px 2px;
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid $softGray;
+                        transition: 0.3s all ease-in-out;
+
+                        &:focus {
+                            color: $softBlack;
+                            outline: none;
+                            border-bottom: 1px solid $mainOrange;
+                        }
+
+                    }
+                }
+
+                .time-slot-container {
+                    width: 100%;
+
+                    .text-container {
+                        @include flex(flex-start, flex-start, row);
+                        h2 {
+                            @include minor-font(1rem, 700, $softBlack);
+                          
+                            margin: 0 10px 10px 0;
+                            
+                            span {
+                                color: $mainOrange;
+                            }
+                        }
+
+                        h3 {
+                            @include minor-font(1rem, 400, gray);
+                        }
+                    }
+                
+
+                    .checkbox-container {
+                        @include flex(flex-start, flex-start, row);
+                        width: 80%;
+                        height: 90px;
+                        margin-bottom: 10%;
+
+                        .left {
+                            @include flex(center, space-between, column);
+                            width: auto;
+                            margin-right: 10px;
+                            transform: translateY(12 px);
+                            height: 100%;
+                       
+
+                            .upper {
+                                height: 30px;
+
+                            }
+
+                            .lower {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                height: 60px;
+
+                                h3 {
+                                    
+                                    @include minor-font(1rem, 700, $softBlack);
+                                    
+                                }
+
+                            }
+                        }
+
+                        .right {
+                            @include flex(flex-start, flex-start, row);
+                            height: 90px;
+                            width: 100%;
+
+                            .day {
+                                @include flex(center, space-between, column);
+                                margin-right: 20px;
+                                width: 50px;
+                                
+                                height: 100%;
+                                h3 {
+                                    @include flex(center, center, column);
+                                    @include minor-font(1rem, 700, $softBlack);
+                                    width: 100%;
+                                }
+
+                                input {
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .submit-button {
+                    @include flex(center, center, row);
+                @include minor-font(1rem, 700, $superLightBeige);
+
+                padding: 12px 15px;
+                border-radius: 5px;
+                border: 1px solid $mainOrange;
+                background: $mainOrange;
+                text-decoration: none;
+                transition: 0.2s all ease-in;
+                cursor: pointer;
+
+                &:hover {
+                    border: 1px solid $softBlack;
+                    background: $softBlack;
+                    color: $lightBeige;     
+                }
+                }
+            }
+
+        }
+
+    }
+
+}

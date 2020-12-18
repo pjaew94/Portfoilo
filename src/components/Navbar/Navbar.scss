@@ -1,0 +1,95 @@
+@import '../config';
+
+.navbar-container {
+    @include flex(center, center, row);
+
+    height: 7vh;
+    width: 100vw;
+    padding: 2vh 0;
+    position: fixed;
+    z-index: 10;
+
+    .inner {
+        @include flex(center, space-between, row);
+        height: 100%;
+        width: $inner-width;
+
+
+        .left-container {
+            @include flex(center, flex-start, row);
+            height: 100%;
+
+            img{
+                height: 2.5rem;
+            }
+            
+        }
+        
+        .right-container {
+            @include flex(center, space-between, row);
+            height: 100%;
+
+            .nav-links-container {
+                @include flex(center, space-between, row);
+                padding: 8px 0;
+                width: 280px;
+
+
+                .nav {
+                    @include minor-font(1rem, 700, $black);
+                    padding: 10px 10px;
+                    cursor: pointer;
+                    position: relative;
+                    text-decoration: none;
+                    transition: 0.2s all ease-in-out;
+
+                    span {
+                        position: absolute;
+                        width: 0%;
+                        height: 2px;
+                        background: $mainOrange;
+                        bottom: 5px;
+                        left: 0;
+                        transition: 0.2s all ease-in-out;
+                    }
+
+                    .expand-border {
+                        width: 100%;
+                        transform-origin: 0% 50%;
+                    }
+                }
+
+                .highlight {
+                    color: $mainOrange;
+                }
+            }
+
+
+            .contact-link {
+                @include flex(center, center, row);
+                @include minor-font(1rem, 700, $black);
+                padding: 12px 15px;
+                border-radius: 5px;
+                border: 1px solid $black;
+                text-decoration: none;
+                margin-left: 40px;
+                transition: 0.2s all ease-in;
+
+                &:hover {
+                    background: $black;
+                    color: $lightBeige;     
+                }
+            }
+        }
+    }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .navbar-container {
+        background: rgba( 238, 223, 210, 0.55 );
+      
+        backdrop-filter: blur( 4.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border-radius: 10px;
+    }
+}

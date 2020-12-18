@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Zilla+Slab:wght@300;400;500;600&display=swap');
+
+$softGray: #ded9d5;
+$softBlack: #454244;
+$black: #2E2B29;
+$superLightBeige: #f9f4f0;
+$lightBeige: #eedfd2;
+$mainOrange: #E44E13;
+$inner-width: 75%;
+
+@mixin flex($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin main-font($size, $weight, $color) {
+    font-family: 'Zilla Slab', serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin minor-font($size, $weight, $color) {
+    font-family: 'Nunito', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
