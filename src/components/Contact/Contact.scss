@@ -1,4 +1,4 @@
-@import '../config';
+@import "../config";
 
 .contact-container {
     @include flex(flex-end, center, row);
@@ -19,7 +19,6 @@
             .text {
                 @include flex(flex-start, space-between, column);
                 width: 100%;
-
 
                 h1 {
                     @include main-font(3.5rem, 700, $softBlack);
@@ -43,7 +42,6 @@
                 width: 80%;
                 transform: translateX(-50px);
             }
-
         }
 
         .right {
@@ -57,7 +55,6 @@
                 width: 80%;
                 margin-left: 20%;
                 margin-top: 5%;
-
 
                 .form-input-container {
                     @include flex(flex-start, flex-start, column);
@@ -85,7 +82,6 @@
                             outline: none;
                             border-bottom: 1px solid $mainOrange;
                         }
-
                     }
                 }
 
@@ -96,9 +92,9 @@
                         @include flex(flex-start, flex-start, row);
                         h2 {
                             @include minor-font(1rem, 700, $softBlack);
-                          
+
                             margin: 0 10px 10px 0;
-                            
+
                             span {
                                 color: $mainOrange;
                             }
@@ -108,7 +104,6 @@
                             @include minor-font(1rem, 400, gray);
                         }
                     }
-                
 
                     .checkbox-container {
                         @include flex(flex-start, flex-start, row);
@@ -122,11 +117,9 @@
                             margin-right: 10px;
                             transform: translateY(12 px);
                             height: 100%;
-                       
 
                             .upper {
                                 height: 30px;
-
                             }
 
                             .lower {
@@ -136,11 +129,8 @@
                                 height: 60px;
 
                                 h3 {
-                                    
                                     @include minor-font(1rem, 700, $softBlack);
-                                    
                                 }
-
                             }
                         }
 
@@ -153,7 +143,7 @@
                                 @include flex(center, space-between, column);
                                 margin-right: 20px;
                                 width: 50px;
-                                
+
                                 height: 100%;
                                 h3 {
                                     @include flex(center, center, column);
@@ -171,26 +161,81 @@
 
                 .submit-button {
                     @include flex(center, center, row);
-                @include minor-font(1rem, 700, $superLightBeige);
+                    @include minor-font(1rem, 700, $superLightBeige);
 
-                padding: 12px 15px;
-                border-radius: 5px;
-                border: 1px solid $mainOrange;
-                background: $mainOrange;
-                text-decoration: none;
-                transition: 0.2s all ease-in;
-                cursor: pointer;
+                    padding: 12px 15px;
+                    border-radius: 5px;
+                    border: 1px solid $mainOrange;
+                    background: $mainOrange;
+                    text-decoration: none;
+                    transition: 0.2s all ease-in;
+                    cursor: pointer;
 
-                &:hover {
-                    border: 1px solid $softBlack;
-                    background: $softBlack;
-                    color: $lightBeige;     
-                }
+                    &:hover {
+                        border: 1px solid $softBlack;
+                        background: $softBlack;
+                        color: $lightBeige;
+                    }
                 }
             }
-
         }
-
     }
+}
 
+@media screen and (min-device-width: 2400px) and (max-device-width: 3200px) {
+    .contact-container {
+        .inner {
+            .right {
+                form {
+                    margin-left: 10%;
+
+                    .form-input-container {
+                        margin-bottom: 50px;
+
+                        h2 {
+                            font-size: 1.3rem;
+                        }
+
+                        input {
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                    .time-slot-container {
+                        .text-container {
+                            margin-bottom: 10px;
+                            h2 {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        .checkbox-container {
+                            .left {
+                                .lower {
+                                    h3 {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+
+                            .right {
+                                .day {
+                                    margin-right: 30px;
+
+                                    h3 {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .submit-button {
+                        padding: 20px 25px;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
 }
