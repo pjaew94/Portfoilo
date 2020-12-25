@@ -1,0 +1,67 @@
+@import "../config";
+
+.about-container {
+    @include flex(center, center, row);
+    padding: 10vh 0 0 0;
+    height: 100vh;
+    width: 100vw;
+    background: $lightBeige;
+
+    
+    .inner {
+        @include flex(flex-start, flex-start, column);
+        height: 100%;
+        width: $inner-width;
+
+        .text {
+            @include flex(flex-start, flex-start, row);
+            width: 100%;
+            margin-bottom: 40px;
+
+            h2 {
+                @include main-font(3.5rem, 700, $black);
+            }
+        }
+
+        .content-container {
+            @include flex(center, space-around, row);
+            width: 100%;
+            height: 80%;
+            
+            .about-card {
+                @include flex(center, flex-start, column);
+                height: 100%;
+                width: 25%;
+                padding: 2%;
+                box-shadow: 0 1px 15px -5px rgb(148, 148, 148);
+          
+
+                .img-container {
+                    @include flex(center, center, row);
+                    height: 20%;
+                    width: 100%;
+
+                    img {
+                        height: 70%;
+                    }
+                }
+
+                .text-container {
+                    @include flex(flex-start, flex-start, column);
+                    padding: 5% 0;
+
+                    h2 {
+                        @include main-font(1.4rem, 700, $black);
+                        margin-bottom: 0.8rem;
+                    }
+
+                    p {
+                        @include minor-font(0.9rem, 400, $black);
+                        line-height: 1.4rem;
+                        margin-bottom: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

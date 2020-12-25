@@ -1,0 +1,253 @@
+@import "../config";
+
+.projects-container {
+    @include flex(center, flex-start, column);
+    padding: 10vh 0 20vh 0;
+    height: auto;
+    width: 100vw;
+    background: $lightBeige;
+
+    .inner {
+        @include flex(flex-start, flex-start, column);
+        width: $inner-width;
+
+        .message {
+            margin-bottom: 20vh;
+
+            h1 {
+                @include main-font(3.5rem, 700, $black);
+                margin-bottom: 10px;
+            }
+
+            p {
+                width: 40%;
+                @include minor-font(1rem, 600, $black);
+                line-height: 1.8rem;
+            }
+        }
+
+        .project-container {
+            @include flex(center, flex-start, column);
+            width: 100%;
+
+            .pizza-project {
+                @include flex(center, space-between, row);
+                height: 50vh;
+                width: 100%;
+                margin-bottom: 30vh;
+
+                .left {
+                    position: relative;
+                    height: 100%;
+                    width: 50%;
+
+                    img {
+                        position: absolute;
+                        height: 120%;
+                        border-radius: 20px;
+                        box-shadow: 0 1px 15px -5px rgb(148, 148, 148);
+                    }
+
+                    .img-1 {
+                        left: 10%;
+                        top: -20%;
+                    }
+
+                    .img-2 {
+                        right: 10%;
+                    }
+                }
+
+                .right {
+                    @include flex(flex-start, flex-start, column);
+                    height: 100%;
+                    width: 40%;
+                    transform: translateX(-10%);
+
+                    .text {
+                        @include flex(flex-start, flex-start, column);
+                        width: 100%;
+                        margin-bottom: 10%;
+
+                        h2 {
+                            @include main-font(2.5rem, 700, $black);
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            @include minor-font(1rem, 600, $black);
+                            line-height: 1.8rem;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    a {
+                        @include flex(center, center, row);
+                        @include minor-font(1rem, 700, $mainOrange);
+                        padding: 12px 15px;
+                        border-radius: 5px;
+                        border: 1px solid $mainOrange;
+                        text-decoration: none;
+                        cursor: pointer;
+                        transition: 0.2s all ease-in;
+
+                        &:hover {
+                            background: $softBlack;
+                            color: $lightBeige;
+                            border: 1px solid $softBlack;
+                        }
+                    }
+                }
+            }
+
+            .jlc-project {
+                @include flex(center, space-between, row);
+                height: 60vh;
+                width: 100%;
+                margin-bottom: 20vh;
+
+                .right {
+                    @include flex(center, center, row);
+                    height: 100%;
+                    width: 60%;
+
+                    img {
+                        height: 100%;
+                        border-radius: 20px;
+                        box-shadow: 0 1px 15px -5px rgb(148, 148, 148);
+                    }
+                }
+
+                .left {
+                    @include flex(flex-start, center, column);
+                    height: 100%;
+                    width: 40%;
+                    padding-right: 5%;
+
+                    .text {
+                        @include flex(flex-start, flex-start, column);
+                        width: 100%;
+                        margin-bottom: 5%;
+
+                        h2 {
+                            @include main-font(2.5rem, 700, $black);
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            @include minor-font(1rem, 600, $black);
+                            line-height: 1.8rem;
+                            margin-bottom: 15px;
+
+                            .underline {
+                                border-bottom: 2px solid $mainOrange;
+                            }
+
+                            .astrix {
+                                color: $mainOrange;
+                            }
+                        }
+                    }
+
+                    a {
+                        @include flex(center, center, row);
+                        @include minor-font(1rem, 700, $mainOrange);
+                        padding: 12px 15px;
+                        border-radius: 5px;
+                        border: 1px solid $mainOrange;
+                        text-decoration: none;
+                        cursor: pointer;
+                        transition: 0.2s all ease-in;
+
+                        &:hover {
+                            background: $softBlack;
+                            color: $lightBeige;
+                            border: 1px solid $softBlack;
+                        }
+                    }
+                }
+            }
+
+            .nba-project {
+                @include flex(center, space-between, row);
+                height: 60vh;
+                width: 100%;
+
+                .left {
+                    @include flex(center, center, row);
+                    height: 100%;
+                    width: 60%;
+
+                    img {
+                        height: 95%;
+                        border-radius: 20px;
+                        box-shadow: 0 1px 15px -5px rgb(148, 148, 148);
+                    }
+
+                    .img-2 {
+                        right: 10%;
+                    }
+                }
+
+                .right {
+                    @include flex(flex-start, center, column);
+                    height: 100%;
+                    width: 40%;
+                    transform: translateX(10%);
+
+                    .text {
+                        @include flex(flex-start, flex-start, column);
+                        width: 80%;
+                        margin-bottom: 5%;
+
+                        h2 {
+                            @include main-font(2.5rem, 700, $black);
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            @include minor-font(1rem, 600, $black);
+                            line-height: 1.8rem;
+                            margin-bottom: 15px;
+
+                            a {
+                                text-decoration: none;
+                                color: $mainOrange;
+                            }
+
+                            span {
+                                border-bottom: 2px solid $mainOrange;
+                            }
+                        }
+                    }
+
+                    .disabled-button {
+                        @include flex(center, center, row);
+                        @include minor-font(1rem, 700, gray);
+                        padding: 12px 15px;
+                        border-radius: 5px;
+                        border: 1px solid gray;
+                        text-decoration: none;
+                        cursor: not-allowed;
+                        transition: 0.2s all ease-in;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hr-container {
+    @include flex(center, center, row);
+    width: 100vw;
+    background: $lightBeige;
+
+    .horizontal-line {
+        height: 2px;
+        width: $inner-width;
+        background-image: linear-gradient(to right, $softBlack 10%, rgba(255,255,255, 0) 0%);
+        background-position: bottom;
+        background-size: 15px 2px;
+        background-repeat: repeat-x;
+    }
+}
