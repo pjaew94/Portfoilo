@@ -113,3 +113,51 @@
     }
 }
 
+@media screen and (min-device-width: 2400px) and (max-device-width: 3200px) {
+    .introduction-container {
+
+        .inner {
+            .upper {
+                .left {
+                    .left-inner {
+                        h1 {
+                            font-size: 4.2rem;
+                        }
+
+                        h3 {
+                            font-size: 1.3rem;
+                            line-height: 2.2rem;
+
+                            span {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        .buttons-container {
+                            .button {
+                                font-size: 1.3rem;
+                                padding: 20px 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Laptop
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .introduction-container {
+        .inner {
+            width: 80%;
+
+            .upper {
+                .left {
+                    
+                }
+            }
+        }
+    }
+}

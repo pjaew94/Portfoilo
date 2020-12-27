@@ -251,3 +251,92 @@
         background-repeat: repeat-x;
     }
 }
+
+
+@media screen and (min-device-width: 2400px) and (max-device-width: 3200px) {
+    .projects-container {
+        .inner {
+            .message {
+                h1 {
+                    font-size: 4.2rem;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    line-height: 2.2rem;
+                }
+            }
+
+            .project-container {
+                .pizza-project {
+                    .right {
+                        .text {
+                            h2 {
+                                font-size: 3.2rem;
+                            }
+
+                            p {
+                                font-size: 1.3rem;
+                                line-height: 2.2rem;
+                            }
+                        }
+
+                        a {
+                            padding: 20px 25px;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                .jlc-project {
+                    .left {
+                        .text {
+                            h2 {
+                                font-size: 3.2rem;
+                            }
+    
+                            p {
+                                font-size: 1.3rem;
+                                line-height: 2.2rem;
+
+                                span {
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+    
+                        a {
+                            padding: 20px 25px;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+
+                .nba-project {
+                    .right {
+                        .text {
+                            h2 {
+                                font-size: 3.2rem;
+                            }
+    
+                            p {
+                                font-size: 1.3rem;
+                                line-height: 2.2rem;
+
+                                span {
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+    
+                        a {
+                            padding: 20px 25px;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
