@@ -36,14 +36,14 @@ export const About = ({ setNavbarState }) => {
       text1:
         "As an individual who had always been intrigued by the health field, I've had a handful of work experiences in many different positions.",
       text2:
-        "I was fortunate enough to work along side by side with some of the most wonderful pharmacists, doctors, researchers, and teachers. Through my experiences of working as a pharmacist tech, medical assistant, biomanufacturing associate, and a teacher, I've come to realize that detail-orientation, patience, and teamwork are the traits that drives work places forwards."
+        "I was fortunate enough to work along side by side with some of the most wonderful pharmacists, doctors, researchers, and teachers. Through my experiences of working as a pharmacist tech, medical assistant, biomanufacturing associate, and a teacher, I've come to realize that detail-orientation, patience, and teamwork are the traits that propels businesses toward success."
  
     },
     {
       svg: heartSvg,
       title: "Passion",
       text1: "One of the strongest qualities I hold is my competitiveness and I firmly believe it is this quality that shaped who I am.",
-      text2: "Whether it be playing basketball, drums, teaching, working out, or programming, I always hold myself to high standards. To me, embodying competitiveness doesn't mean to always try to be better than someone else. Rather, it's to fight the tendency to stay mediocre. It's to becoming a better person everyday regardless of the task at hand."
+      text2: "Whether it be playing basketball, drums, teaching, working out, or programming, I always hold myself to high standards. To me, embodying competitiveness doesn't mean to always try to be better than someone else. Rather, it's to fight the tendency to stay mediocre. It is to becoming a better person everyday regardless of the task at hand."
 
     },
   ];

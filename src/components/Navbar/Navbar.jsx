@@ -8,6 +8,8 @@ import jpLogo from "../../media/jpLogo.svg";
 
 const Navbar = ({ navbarState, setNavbarState, inContact }) => {
 
+
+
   const [showNav, setShowNav] = useState(false)
 
   const navLinks = [

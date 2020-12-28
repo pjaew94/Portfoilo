@@ -66,6 +66,7 @@
     }
 }
 
+// 4k
 @media screen and (min-device-width: 2400px) and (max-device-width: 3200px) {
     .about-container {
         .inner {
@@ -87,6 +88,82 @@
                         p {
                             font-size: 1.3rem;
                             line-height: 2.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Laptop
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .about-container {
+        .inner {
+            width: 90%;
+
+            .text {
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .content-container {
+                .about-card {
+                    .text-container {
+                        h2 {
+                            font-size: 1.2rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Phone
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    .about-container {
+        height: auto;
+        
+        .inner {
+            width: 100%;
+            padding: 0 10%;
+          
+
+            .text {
+                margin-bottom: 0;
+                h2 {
+                    font-size: 2.8rem;
+                }
+            }
+
+            .content-container {
+                flex-direction: column;
+                height: auto;
+
+                .about-card {
+                    height: auto;
+                    width: 100%;
+                    box-shadow: none;
+                    padding: 10vh 0 10vh 0;
+                    
+                    border-bottom: 1px solid $softGray;
+
+                    .img-container {
+                        height: 15vh;
+
+                    }
+
+                    .text-container {
+                        p {
+                            line-height: 1.6rem;
                         }
                     }
                 }

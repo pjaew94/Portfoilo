@@ -113,6 +113,7 @@
     }
 }
 
+// 4k
 @media screen and (min-device-width: 2400px) and (max-device-width: 3200px) {
     .introduction-container {
 
@@ -151,12 +152,90 @@
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
     .introduction-container {
         .inner {
-            width: 80%;
+            width: 90%;
 
             .upper {
                 .left {
-                    
+                    .left-inner{
+                        h1 {
+                            font-size: 2.5rem;
+                        }
+
+                        h3 {
+                            font-size: 0.8rem;
+                            span {
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                        .buttons-container {
+                            width: 60%;
+                            .button {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
                 }
+
+                .right {
+                    img {
+                        height: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Phone
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    .introduction-container {
+        height: auto;
+        .inner {
+            height: auto;
+            width: 100%;
+            margin: 0;
+            transform: translateY(0);
+
+            .upper {
+                height: auto;
+                
+                .left {
+                    height: 100vh;
+                    width: 100%;
+                    padding: 10%;
+
+                    .left-inner {
+                        h1 {
+                            font-size: 2.7rem;
+                            width: 100%;
+                        }
+
+                        h3 {
+                            width: 100%;
+                            font-size: 0.9rem;
+
+                            span {
+                                font-size: 0.9rem;
+                            }
+                        }
+
+                        .buttons-container {
+                            width: 100%;
+                            .button {
+                                padding: 12px 20px;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    display: none;
+                }
+            }
+
+            .lower {
+                display: none;
             }
         }
     }

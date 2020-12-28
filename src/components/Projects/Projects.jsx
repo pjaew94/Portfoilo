@@ -64,13 +64,15 @@ export const Projects = ({ setNavbarState }) => {
                     related data paired with Amazon S3 to store images.
                   </p>
                 </div>
-                <a
-                  href="https://jaespizzeria.herokuapp.com/menu"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Project
-                </a>
+                <div className="a-link-container">
+                  <a
+                    href="https://jaespizzeria.herokuapp.com/menu"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Project
+                  </a>
+                </div>
               </div>
             </div>
             <div className="project jlc-project">
@@ -78,15 +80,16 @@ export const Projects = ({ setNavbarState }) => {
                 <div className="text">
                   <h2>JLC Studies</h2>
                   <p>
-                    <span className='underline'>JLC Studies</span> is a platform where our Jesus Love Church
-                    Saturday School teachers can post homework assignments and
-                    comments based on their field. Students are able to see the
-                    posts and comment any questions they may have during the
-                    week. The application also suggests helpful tools for
-                    students' use.
+                    <span className="underline">JLC Studies</span> is a platform
+                    where our Jesus Love Church Saturday School teachers can
+                    post homework assignments and comments based on their field.
+                    Students are able to see the posts and comment any questions
+                    they may have during the week. The application also suggests
+                    helpful tools for students' use.
                   </p>
                   <p>
-                    <span className='astrix'>*</span> To use, login with Admin@gmail.com | admin123
+                    <span className="astrix">*</span> To use, login with
+                    Admin@gmail.com | admin123
                   </p>
                   <p>
                     Technologies used to create this application include React
@@ -95,13 +98,15 @@ export const Projects = ({ setNavbarState }) => {
                     data required for this application.
                   </p>
                 </div>
-                <a
-                  href="https://powerful-chamber-64660.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Project
-                </a>
+                <div className="a-link-container">
+                  <a
+                    href="https://powerful-chamber-64660.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Project
+                  </a>
+                </div>
               </div>
               <div className="right">
                 <img className="img-2" src={jlcAppOne} alt="jlc app img 2" />
@@ -115,8 +120,8 @@ export const Projects = ({ setNavbarState }) => {
                 <div className="text">
                   <h2>NumbersBA</h2>
                   <p>
-                    <span>NumbersBA</span> is an analytical application that is built around
-                    NBA players statistics. The product provides
+                    <span>NumbersBA</span> is an analytical application that is
+                    built around NBA players statistics. The product provides
                     player-to-player comparisons for all those passionate fans
                     who likes comparing NBA players all the time.
                   </p>
@@ -134,7 +139,9 @@ export const Projects = ({ setNavbarState }) => {
                     for the data .
                   </p>
                 </div>
-                <div className="disabled-button">In Progress</div>
+                <div className="a-link-container">
+                  <div className="disabled-button">In Progress</div>
+                </div>
               </div>
             </div>
           </div>

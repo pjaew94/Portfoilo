@@ -3,11 +3,8 @@ import React, { Fragment, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from './components/Landing/Landing';
 import Contact from './components/Contact/Contact';
-import Navbar from './components/Navbar/Navbar'
 
 function App() {
-
-
   return (
     <Router>
       <Fragment>
