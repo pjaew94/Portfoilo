@@ -320,7 +320,7 @@
 }
 
 // Phone
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
     .contact-container {
         height: auto;
 
@@ -441,6 +441,16 @@
                     }
                 }
             }
+        }
+
+        .back-link {
+            position: absolute;
+            top: 5%;
+            right: 8%;
+            text-decoration: none;
+            @include main-font(1.1rem, 700, rgb(167, 167, 167));
+            
+
         }
     }
 }

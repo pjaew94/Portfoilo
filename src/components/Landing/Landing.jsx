@@ -9,6 +9,7 @@ import { About } from './../About/About';
 
 import { useMediaQuery } from 'react-responsive'
 import { Hamburger } from "../Hamburger/Hamburger";
+import { Navigator } from './../Navigator/Navigator';
 
 const Landing = () => {
   const [navbarState, setNavbarState] = useState("Home");
@@ -21,7 +22,8 @@ const Landing = () => {
 
   return (
     <>
-    {isPhone && <Hamburger setShowNavigator={setShowNavigator} />}
+    {isPhone && <Hamburger setShowNavigator={setShowNavigator} showNavigator={showNavigator} navbarState={navbarState} />}
+    {isPhone && <Navigator setShowNavigator={setShowNavigator} showNavigator={showNavigator} navbarState={navbarState} setNavbarState={setNavbarState} />}
       {!isPhone && <Navbar navbarState={navbarState} setNavbarState={setNavbarState} />}
       <Intro setNavbarState={setNavbarState}  />
       <Projects setNavbarState={setNavbarState} />

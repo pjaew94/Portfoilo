@@ -1,0 +1,45 @@
+@import '../config';
+
+.navigator-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: $lightBeige;
+    z-index: 20;
+    transform: translateX(100vw);
+    transition: 0.3s all ease-in-out;
+
+    .inner {
+        @include flex(flex-start, flex-start, column);
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 30% 0 0 30%;
+
+        .link {
+            @include main-font(2rem, 700, $softBlack);
+            margin-bottom: 1.5rem;
+        }
+
+        .highlighted {
+            border-bottom: 3px solid $mainOrange;
+        }
+
+        .icon-container {
+            @include flex(center, center, row);
+            position: absolute;
+            top: 3%;
+            right: 8%;
+            padding: 8px;
+
+            .icon {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.show-navigator {
+    transform: translateX(0);
+
+}

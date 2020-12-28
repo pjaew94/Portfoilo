@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React  from "react";
 import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
 import "./Contact.scss";
 import { init, sendForm } from "emailjs-com";
 
@@ -34,6 +35,7 @@ const Contact = () => {
     <>
       {!isPhone && <Navbar inContact={true} />}
       <div className="contact-container">
+      {isPhone && <Link className='back-link' to='/'>Back</Link>}
         <div className="inner">
           <div className="left">
             <div className="text">

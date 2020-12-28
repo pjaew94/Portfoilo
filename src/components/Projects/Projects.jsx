@@ -11,7 +11,7 @@ import nbaAppOne from "../../media/nbaAppOne.png";
 
 export const Projects = ({ setNavbarState }) => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
   });
 
   useEffect(() => {

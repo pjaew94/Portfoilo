@@ -6,7 +6,7 @@ import { Link as Scroller } from "react-scroll";
 import jpLogo from "../../media/jpLogo.svg";
 
 
-const Navbar = ({ navbarState, setNavbarState, inContact }) => {
+const Navbar = ({ navbarState, inContact }) => {
 
 
 
@@ -42,7 +42,6 @@ const Navbar = ({ navbarState, setNavbarState, inContact }) => {
                   smooth={true}
                   duration={1000}
                   className={`nav ${navbarState === nav.value && "highlight"}`}
-                  onClick={() => setNavbarState(nav.value)}
                 >
                   {nav.value}
                   <span className={navbarState === nav.value && "expand-border"}></span>
