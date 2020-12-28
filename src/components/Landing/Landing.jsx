@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 
-import "./Landing.scss";
-
 import Intro from './../Intro/Intro';
 import { Projects } from './../Projects/Projects';
 import { About } from './../About/About';
