@@ -19,9 +19,9 @@
 
     .hamburger {
         @include flex(flex-end, space-between, column);
-        padding: 20px 10px;
-        height: 60%;
-        width: 17%;
+        
+        height: 10px;
+        width: 30px;
 
         .line-1 {
             width: 100%;
@@ -50,4 +50,102 @@
         -webkit-backdrop-filter: blur( 4.5px );
         border-radius: 10px;
     }
+}
+
+// Phone portrait
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 812px) 
+and(orientation: portrait) {
+}
+
+// Phone landscape
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 825px) 
+and(orientation: landscape) {
+    .hamburger-container {
+        padding: 0 5%;
+        height: 20vh;
+        transform: translateY(-20vh);
+
+
+    }
+
+    .show-hamburger {
+        transform: translateY(0);
+    }
+}
+
+// Low end Tablet Portrait
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1366px) 
+and (min-height: 1024px) 
+and (orientation: portrait) {
+
+}
+
+// Low end Tablet landscape
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+// Mid Tablet Portrait
+@media only screen 
+and (min-device-width: 823px) 
+and (max-device-width: 823px) 
+and (min-device-height: 1112px) 
+and (max-device-height: 1112px) 
+and (orientation: portrait) {
+
+}
+
+// Mid Tablet Landscape
+@media only screen 
+and (min-device-height: 823px) 
+and (max-device-height: 823px) 
+and (min-device-width: 1112px) 
+and (max-device-width: 1112px) 
+and (orientation: landscape) {
+
+}
+
+ // High end Tablet Portrait
+ @media only screen 
+ and (min-device-width: 1024px) 
+ and (max-device-width: 1024px) 
+ and (min-device-height: 1366px) 
+ and (max-device-height: 1366px) 
+ and (orientation: portrait) {
+
+ }
+
+ // High end Tablet Landscape
+@media only screen 
+and (min-device-height: 1024px) 
+and (max-device-height: 1024px) 
+and (min-device-width: 1366px) 
+and (max-device-width: 1366px) 
+and (orientation: landscape) {
+
+}
+
+// Laptop
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1680px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+// 4k
+@media screen 
+and (min-device-width: 2400px) 
+and (max-device-width: 3200px) {
+    
 }

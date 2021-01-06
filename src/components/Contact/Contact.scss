@@ -182,145 +182,15 @@
     }
 }
 
-// 4k & Retina
-@media screen and (min-device-width: 2400px) and (max-device-width: 3200px) {
-    .contact-container {
-        .inner {
-            .right {
-                form {
-                    margin-left: 10%;
 
-                    .form-input-container {
-                        margin-bottom: 50px;
 
-                        h2 {
-                            font-size: 1.3rem;
-                        }
 
-                        input {
-                            font-size: 1.3rem;
-                        }
-                    }
 
-                    .time-slot-container {
-                        .text-container {
-                            margin-bottom: 10px;
-                            h2 {
-                                font-size: 1.3rem;
-                            }
-                        }
-
-                        .checkbox-container {
-                            .left {
-                                .lower {
-                                    h3 {
-                                        font-size: 1.2rem;
-                                    }
-                                }
-                            }
-
-                            .right {
-                                .day {
-                                    margin-right: 30px;
-
-                                    h3 {
-                                        font-size: 1.2rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .submit-button {
-                        padding: 20px 25px;
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// Laptop
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-    .contact-container {
-        .inner {
-            width: 80%;
-
-            .left {
-                .text {
-                    h1 {
-                        font-size: 2.7rem;
-                    }
-
-                    h3 {
-                        font-size: 1rem;
-                    }
-                }
-            }
-
-            .right {
-                form {
-                    margin-left: 15%;
-                    margin-top: 0;
-
-                    .form-input-container {
-                        margin-bottom: 25px;
-
-                        h2 {
-                            font-size: 0.9rem;
-                        }
-
-                        input {
-                            font-size: 0.9rem;
-                        }
-                    }
-
-                    .time-slot-container {
-                        .text-container {
-                            h2 {
-                                font-size: 0.9rem;
-
-                                span {
-                                    font-size: 0.9rem;
-                                }
-                            }
-
-                            h3 {
-                                font-size: 0.9rem;
-                            }
-                        }
-
-                        .checkbox-container {
-                            .left {
-                                .lower {
-                                    h3 {
-                                        font-size: 0.8rem;
-                                    }
-                                }
-                            }
-
-                            .right {
-                                .day {
-                                    h3 {
-                                        font-size: 0.9rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .submit-button {
-                        font-size: 0.8rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// Phone
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+// Phone portrait
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 812px) 
+and(orientation: portrait) {
     .contact-container {
         height: auto;
 
@@ -451,6 +321,346 @@
             @include main-font(1.1rem, 700, rgb(167, 167, 167));
             
 
+        }
+    }
+}
+
+// Phone landscape
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 825px) 
+and(orientation: landscape) {
+    .contact-container {
+        height: auto;
+
+        .inner {
+            @include flex(center, center, column);
+            height: auto;
+            width: 80%;
+
+            .left {
+                width: 100%;
+                padding: 10%;
+                height: auto;
+
+                .text {
+                    h1 {
+                        font-size: 2.5rem;
+                        line-height: 3rem;
+                    }
+                    .bottom-h1 {
+                        margin: 0;
+                        margin-bottom: 12px;
+                    }
+
+                    h3 {
+                        font-size: 1rem;
+
+                        span {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                img {
+                    display: none;
+                }
+            }
+
+            .hr-container {
+                @include flex(center, center, row);
+                width: 100%;
+                background: $lightBeige;
+            
+                .horizontal-line {
+                    height: 2px;
+                    width: 80%;
+                    background-image: linear-gradient(to right, $softBlack 10%, rgba(255,255,255, 0) 0%);
+                    background-position: bottom;
+                    background-size: 15px 2px;
+                    background-repeat: repeat-x;
+                }
+            }
+
+            .right {
+                height: auto;
+                width: 100%;
+
+                form {
+                    margin: 0;
+                    padding: 10%;
+                    width: 100%;
+
+                    .form-input-container {
+                        width: 100%;
+
+                        h2 {
+                            font-size: 0.9rem;
+                        }
+
+                        input {
+                            font-size: 0.9rem;
+
+                        }
+                    }
+
+                    .time-slot-container {
+                        .text-container {
+                            h2 {
+                                font-size: 0.9rem;
+
+                                span {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            h3 {
+                                font-size: 0.9rem;
+                            }
+                        }
+
+                        .checkbox-container {
+                            width: 100%;
+                            .left {
+                                width: 0%;
+                                padding: 0;
+                                transform: translateY(-5px);
+                                margin-right: 20px;
+
+                                .lower {
+                                    height: 55px;
+                                    h3 {
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+
+                            .right {
+                                .day {
+                                    h3 {
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .submit-button {
+                  
+                    }
+                }
+            }
+        }
+
+        .back-link {
+            position: absolute;
+            top: 10%;
+            right: 15%;
+            text-decoration: none;
+            @include main-font(1.1rem, 700, rgb(167, 167, 167));
+            
+
+        }
+    }
+
+}
+
+// Low end Tablet Portrait
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1366px) 
+and (min-height: 1024px) 
+and (orientation: portrait) {
+
+}
+
+// Low end Tablet landscape
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+// Mid Tablet Portrait
+@media only screen 
+and (min-device-width: 823px) 
+and (max-device-width: 823px) 
+and (min-device-height: 1112px) 
+and (max-device-height: 1112px) 
+and (orientation: portrait) {
+
+}
+
+// Mid Tablet Landscape
+@media only screen 
+and (min-device-height: 823px) 
+and (max-device-height: 823px) 
+and (min-device-width: 1112px) 
+and (max-device-width: 1112px) 
+and (orientation: landscape) {
+
+}
+
+ // High end Tablet Portrait
+ @media only screen 
+ and (min-device-width: 1024px) 
+ and (max-device-width: 1024px) 
+ and (min-device-height: 1366px) 
+ and (max-device-height: 1366px) 
+ and (orientation: portrait) {
+
+ }
+
+ // High end Tablet Landscape
+@media only screen 
+and (min-device-height: 1024px) 
+and (max-device-height: 1024px) 
+and (min-device-width: 1366px) 
+and (max-device-width: 1366px) 
+and (orientation: landscape) {
+
+}
+
+// Laptop
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1680px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .contact-container {
+        .inner {
+            width: 80%;
+
+            .left {
+                .text {
+                    h1 {
+                        font-size: 2.7rem;
+                    }
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .right {
+                form {
+                    margin-left: 15%;
+                    margin-top: 0;
+
+                    .form-input-container {
+                        margin-bottom: 25px;
+
+                        h2 {
+                            font-size: 0.9rem;
+                        }
+
+                        input {
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    .time-slot-container {
+                        .text-container {
+                            h2 {
+                                font-size: 0.9rem;
+
+                                span {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            h3 {
+                                font-size: 0.9rem;
+                            }
+                        }
+
+                        .checkbox-container {
+                            .left {
+                                .lower {
+                                    h3 {
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                            }
+
+                            .right {
+                                .day {
+                                    h3 {
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .submit-button {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 4k
+@media screen 
+and (min-device-width: 2400px) 
+and (max-device-width: 3200px) {
+    .contact-container {
+        .inner {
+            .right {
+                form {
+                    margin-left: 10%;
+
+                    .form-input-container {
+                        margin-bottom: 50px;
+
+                        h2 {
+                            font-size: 1.3rem;
+                        }
+
+                        input {
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                    .time-slot-container {
+                        .text-container {
+                            margin-bottom: 10px;
+                            h2 {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        .checkbox-container {
+                            .left {
+                                .lower {
+                                    h3 {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+
+                            .right {
+                                .day {
+                                    margin-right: 30px;
+
+                                    h3 {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .submit-button {
+                        padding: 20px 25px;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
     }
 }

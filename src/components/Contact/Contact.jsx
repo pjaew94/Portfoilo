@@ -15,7 +15,7 @@ const Contact = () => {
   const { register, handleSubmit } = useForm();
 
   const isPhone = useMediaQuery({
-    query: "(max-device-width: 812px)",
+    query: "(max-device-width: 825px)",
   });
 
   const onSubmit = (data) => {

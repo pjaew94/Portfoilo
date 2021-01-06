@@ -66,69 +66,16 @@
     }
 }
 
-// 4k
-@media screen and (min-device-width: 2400px) and (max-device-width: 3200px) {
-    .about-container {
-        .inner {
-            .text {
-                h2 {
-                    font-size: 4.2rem;
-                }
-            }
-
-            .content-container {
-                .about-card {
-
-                    .text-container {
-                        h2 {
-                            font-size: 2.5rem;
-                            margin-bottom: 1.5rem;
-                        }
-
-                        p {
-                            font-size: 1.3rem;
-                            line-height: 2.2rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 
-// Laptop
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-    .about-container {
-        .inner {
-            width: 90%;
-
-            .text {
-                h2 {
-                    font-size: 2.5rem;
-                }
-            }
-
-            .content-container {
-                .about-card {
-                    .text-container {
-                        h2 {
-                            font-size: 1.2rem;
-                        }
-
-                        p {
-                            font-size: 0.8rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 
-// Phone
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+
+// Phone portrait
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 812px) 
+and(orientation: portrait) {
     .about-container {
         height: auto;
         
@@ -164,6 +111,200 @@
                     .text-container {
                         p {
                             line-height: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Phone landscape
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 825px) 
+and(orientation: landscape) {
+    .about-container {
+        height: auto;
+        padding-top: 30vh;
+        
+        
+        .inner {
+            width: 100%;
+            padding: 0 5%;
+            align-items: center;
+
+            .text {
+                margin-bottom: 0;
+                h2 {
+                    font-size: 2.8rem;
+                }
+            }
+
+            .content-container {
+                flex-direction: column;
+                height: auto;
+                width: 80%;
+
+                .about-card {
+                    height: auto;
+                    width: 100%;
+                    box-shadow: none;
+                    padding: 10vh 0 10vh 0;
+                    
+                    
+                    border-bottom: 1px solid $softGray;
+
+                    .img-container {
+                        height: 40vh;
+
+                    }
+
+                    .text-container {
+                        p {
+                            line-height: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Low end Tablet Portrait
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1366px) 
+and (min-height: 1024px) 
+and (orientation: portrait) {
+    .about-container {
+        .inner {
+            width: 75%;
+            padding: 0;
+
+            .content-container {
+
+                .about-card {
+                    .text-container {
+                        h2 {
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Low end Tablet landscape
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+// Mid Tablet Portrait
+@media only screen 
+and (min-device-width: 823px) 
+and (max-device-width: 823px) 
+and (min-device-height: 1112px) 
+and (max-device-height: 1112px) 
+and (orientation: portrait) {
+
+}
+
+// Mid Tablet Landscape
+@media only screen 
+and (min-device-height: 823px) 
+and (max-device-height: 823px) 
+and (min-device-width: 1112px) 
+and (max-device-width: 1112px) 
+and (orientation: landscape) {
+
+}
+
+ // High end Tablet Portrait
+ @media only screen 
+ and (min-device-width: 1024px) 
+ and (max-device-width: 1024px) 
+ and (min-device-height: 1366px) 
+ and (max-device-height: 1366px) 
+ and (orientation: portrait) {
+
+ }
+
+ // High end Tablet Landscape
+@media only screen 
+and (min-device-height: 1024px) 
+and (max-device-height: 1024px) 
+and (min-device-width: 1366px) 
+and (max-device-width: 1366px) 
+and (orientation: landscape) {
+
+}
+
+// Laptop
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1680px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .about-container {
+        .inner {
+            width: 90%;
+
+            .text {
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .content-container {
+                .about-card {
+                    .text-container {
+                        h2 {
+                            font-size: 1.2rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 4k
+@media screen 
+and (min-device-width: 2400px) 
+and (max-device-width: 3200px) {
+    .about-container {
+        .inner {
+            .text {
+                h2 {
+                    font-size: 4.2rem;
+                }
+            }
+
+            .content-container {
+                .about-card {
+
+                    .text-container {
+                        h2 {
+                            font-size: 2.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+
+                        p {
+                            font-size: 1.3rem;
+                            line-height: 2.2rem;
                         }
                     }
                 }
