@@ -700,7 +700,132 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px) 
 and (orientation: landscape) 
 and (-webkit-min-device-pixel-ratio: 1) {
+    .projects-container {
+        .inner {
+            width: 75%;
+            padding: 0;
+            .message {
+                width: 100%;
 
+                h1 {
+                    font-size: 3.3rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .project-container {
+                .pizza-project {
+                    height: auto;
+                    flex-direction: column;
+                    width: 100%;
+                    .left {
+                        height: 50vh;
+                        margin-bottom: 20vh;
+                        width: 100%;
+                        .img-1 {
+                            left: 50%;
+                        }
+
+                        .img-2 {
+                            left: 10%;
+                        }
+                    }
+
+                    .right {
+                        width: 100%;
+                        transform: translateX(0);
+                        .text {
+                            margin-bottom: 5%;
+                            h2 {
+                                font-size: 2.7rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .a-link-container {
+                        a {
+                            padding: 20px 23px;
+                            font-size: 1.1rem;
+                        }
+                    }
+                    }
+
+            
+                }
+
+                .jlc-project {
+
+                    flex-direction: column-reverse;
+                    height: auto;
+                    .left {
+                        width: 100%;
+                        .text {
+                            h2 {
+                                font-size: 2.7rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .a-link-container {
+                            a {
+                                padding: 20px 23px;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+
+                    .right {
+                        height: 65vh;
+                        margin-bottom: 10vh;
+
+                    }
+                }
+
+                .nba-project {
+                    flex-direction: column;
+                    height: auto;
+
+                    .left {
+                        height: 65vh;
+                        margin-bottom: 10vh;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .right {
+                        width: 100%;
+                        transform: translateX(0);
+                        .text {
+                        h2 {
+                            font-size: 2.7rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+                        }
+
+                        .a-link-container {
+                            .disabled-button {
+                                padding: 20px 23px;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Mid Tablet Portrait
@@ -710,7 +835,135 @@ and (max-device-width: 823px)
 and (min-device-height: 1112px) 
 and (max-device-height: 1112px) 
 and (orientation: portrait) {
+    .projects-container {
+        .inner {
+            width: 100%;
+            padding: 0 10% 0 10%;
+            .message {
+                width: 100%;
+                margin-bottom: 25vh;
 
+                h1 {
+                    font-size: 3.3rem;
+                    
+                }
+
+                p {
+                    font-size: 1rem;
+                    width: 60%;
+                }
+            }
+
+            .project-container {
+                .pizza-project {
+                    height: auto;
+                    flex-direction: column;
+                    width: 100%;
+                    .left {
+                        height: 50vh;
+                        margin-bottom: 20vh;
+                        width: 100%;
+                        .img-1 {
+                            left: 50%;
+                        }
+
+                        .img-2 {
+                            left: 5%;
+                        }
+                    }
+
+                    .right {
+                        width: 100%;
+                        transform: translateX(0);
+                        .text {
+                            margin-bottom: 5%;
+                            h2 {
+                                font-size: 2.7rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .a-link-container {
+                        a {
+                            padding: 20px 23px;
+                            font-size: 1.1rem;
+                        }
+                    }
+                    }
+
+            
+                }
+
+                .jlc-project {
+
+                    flex-direction: column-reverse;
+                    height: auto;
+                    .left {
+                        width: 100%;
+                        .text {
+                            h2 {
+                                font-size: 2.7rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .a-link-container {
+                            a {
+                                padding: 20px 23px;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+
+                    .right {
+                        height: 42vh;
+                        margin-bottom: 10vh;
+
+                    }
+                }
+
+                .nba-project {
+                    flex-direction: column;
+                    height: auto;
+
+                    .left {
+                        height: 42vh;
+                        margin-bottom: 10vh;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .right {
+                        width: 100%;
+                        transform: translateX(0);
+                        .text {
+                        h2 {
+                            font-size: 2.7rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+                        }
+
+                        .a-link-container {
+                            .disabled-button {
+                                padding: 20px 23px;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Mid Tablet Landscape
@@ -720,7 +973,135 @@ and (max-device-height: 823px)
 and (min-device-width: 1112px) 
 and (max-device-width: 1112px) 
 and (orientation: landscape) {
+    .projects-container {
+        .inner {
+            width: 100%;
+            padding: 0 10% 0 10%;
+            .message {
+                width: 100%;
+                margin-bottom: 25vh;
 
+                h1 {
+                    font-size: 3.3rem;
+                    
+                }
+
+                p {
+                    font-size: 1rem;
+                    width: 45%;
+                }
+            }
+
+            .project-container {
+                .pizza-project {
+                    height: auto;
+                    flex-direction: column;
+                    width: 100%;
+                    .left {
+                        height: 50vh;
+                        margin-bottom: 20vh;
+                        width: 100%;
+                        .img-1 {
+                            left: 50%;
+                        }
+
+                        .img-2 {
+                            left: 20%;
+                        }
+                    }
+
+                    .right {
+                        width: 100%;
+                        transform: translateX(0);
+                        .text {
+                            margin-bottom: 5%;
+                            h2 {
+                                font-size: 2.7rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .a-link-container {
+                        a {
+                            padding: 20px 23px;
+                            font-size: 1.1rem;
+                        }
+                    }
+                    }
+
+            
+                }
+
+                .jlc-project {
+
+                    flex-direction: column-reverse;
+                    height: auto;
+                    .left {
+                        width: 100%;
+                        .text {
+                            h2 {
+                                font-size: 2.7rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .a-link-container {
+                            a {
+                                padding: 20px 23px;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+
+                    .right {
+                        height: 70vh;
+                        margin-bottom: 10vh;
+
+                    }
+                }
+
+                .nba-project {
+                    flex-direction: column;
+                    height: auto;
+
+                    .left {
+                        height: 70vh;
+                        margin-bottom: 10vh;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .right {
+                        width: 100%;
+                        transform: translateX(0);
+                        .text {
+                        h2 {
+                            font-size: 2.7rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+                        }
+
+                        .a-link-container {
+                            .disabled-button {
+                                padding: 20px 23px;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
  // High end Tablet Portrait
@@ -733,15 +1114,6 @@ and (orientation: landscape) {
 
  }
 
- // High end Tablet Landscape
-@media only screen 
-and (min-device-height: 1024px) 
-and (max-device-height: 1024px) 
-and (min-device-width: 1366px) 
-and (max-device-width: 1366px) 
-and (orientation: landscape) {
-
-}
 
 // Laptop
 @media screen 
@@ -930,3 +1302,103 @@ and (max-device-width: 3200px) {
         }
     }
 }
+
+ // High end Tablet Landscape
+ @media only screen 
+ and (min-device-height: 1024px) 
+ and (max-device-height: 1024px) 
+ and (min-device-width: 1366px) 
+ and (max-device-width: 1366px) 
+ and (orientation: landscape) {
+    .projects-container {
+        .inner {
+            .message {
+                h1 {
+                    font-size: 2.9rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .project-container {
+
+                .pizza-project {
+                    .right {
+                        .text {
+                            h2 {
+                                font-size: 2.6rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        a {
+                            padding: 20px 25px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .jlc-project {
+                    .left {
+                        .text {
+                            h2 {
+                                font-size: 2.6rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                                span {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+
+                        a {
+                            padding: 20px 25px;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .right {
+                        img {
+                            height: 80%;
+                        }
+                    }
+                }
+
+                .nba-project {
+                    .right {
+                        .text {
+                            h2 {
+                                font-size: 2.6rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                                span {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+
+                        a {
+                            padding: 20px 25px;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .left {
+                        img {
+                            height: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }

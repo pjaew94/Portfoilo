@@ -167,15 +167,6 @@ and (orientation: landscape) {
 
  }
 
- // High end Tablet Landscape
-@media only screen 
-and (min-device-height: 1024px) 
-and (max-device-height: 1024px) 
-and (min-device-width: 1366px) 
-and (max-device-width: 1366px) 
-and (orientation: landscape) {
-
-}
 
 // Laptop
 @media screen 
@@ -207,6 +198,40 @@ and (-webkit-min-device-pixel-ratio: 1) {
         }
     }
 }
+
+ // High end Tablet Landscape
+ @media only screen 
+ and (min-device-height: 1024px) 
+ and (max-device-height: 1024px) 
+ and (min-device-width: 1366px) 
+ and (max-device-width: 1366px) 
+ and (orientation: landscape) {
+    .navbar-container {
+
+        .inner {
+            .left-container {
+                img {
+                    height: 2.2rem; 
+                }
+            }
+
+            .right-container {
+                width: 45%;
+                .nav-links-container {
+                    width: 60%;
+                    .nav {
+                        font-size: 1rem;
+                    }
+            }
+
+            .contact-link {
+                font-size: 1rem;
+                padding: 15px 22px;
+            }
+        }
+        }
+    }
+ }
 
 // 4k
 @media screen 

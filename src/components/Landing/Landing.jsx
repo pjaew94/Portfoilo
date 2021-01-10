@@ -14,7 +14,7 @@ const Landing = () => {
   const [showNavigator, setShowNavigator] = useState(false);
 
   const isPhone = useMediaQuery({
-    query: '(max-device-width: 825px)'
+    query: '(max-device-width: 1112px)'
   })
 
 
