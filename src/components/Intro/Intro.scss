@@ -390,23 +390,26 @@
                     .left-inner {
                         width: 100%;
                         h1 {
-                           font-size: 3.7rem;
+                           font-size: 4.1rem;
+                           width: 90%;
                         }
 
                         h3 {
-                            font-size: 1.3rem;
-                            line-height: 1.9rem;
+                            font-size: 1.4rem;
+                            line-height: 2.5rem;
+                            width: 80%;
 
                             span {
-                                font-size: 1.3rem;
+                                font-size: 1.4rem;
                             }
                         }
                         .buttons-container {
-                            width: 50%;
+                            width: 60%;
+                            margin-top: 10%;
 
                             .button {
-                                padding: 20px 30px;
-                                font-size: 1.3rem;
+                                padding: 25px 35px;
+                                font-size: 1.4rem;
                             }
                         }
                     }

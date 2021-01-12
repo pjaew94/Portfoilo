@@ -387,7 +387,57 @@ and (orientation: landscape) {
  and (min-device-height: 1366px) 
  and (max-device-height: 1366px) 
  and (orientation: portrait) {
+    .about-container {
+        height: auto;
+        padding: 15vh 10vw 0 10vw;
+        
+        
+        .inner {
+            width: 100%;
+            padding: 0 5%;
+            align-items: center;
+            padding: 0;
 
+            .text {
+                margin-bottom: 0;
+                h2 {
+                    font-size: 4.1rem;
+                }
+            }
+
+            .content-container {
+                flex-direction: column;
+                height: auto;
+                width: 80%;
+
+                .about-card {
+                    height: auto;
+                    width: 100%;
+                    box-shadow: none;
+                    padding: 10vh 0 10vh 0;
+                    
+                    
+                    border-bottom: 1px solid $softGray;
+
+                    .img-container {
+                        height: 15vh;
+
+                    }
+
+                    .text-container {
+
+                        h2 {
+                            font-size: 2.5rem;
+                        }
+                        p {
+                            font-size: 1.4rem;
+                            line-height: 2.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
  }
 
 
